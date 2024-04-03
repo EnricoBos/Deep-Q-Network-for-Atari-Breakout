@@ -112,6 +112,7 @@ class GameWrapper:
 ###vars
 # Change this to the path of the model you would like to use
 RESTORE_PATH = None
+video_path = None
 ENV_NAME = 'BreakoutDeterministic-v4'
 MAX_NOOP_STEPS = 20 # Randomly perform this number of actions before every evaluation to give it an element of randomness
 INPUT_SHAPE = (84, 84)# Size of the preprocessed input frame. With the current model architecture, anything below ~80 won't work.
@@ -119,14 +120,14 @@ BATCH_SIZE = batch_size =  32 # Number of samples the agent learns from at once
 LEARNING_RATE = 0.00001
 EVAL_LENGTH = 10000  # Number of frames to evaluate for
 eps_evaluation=0.0
-
-if RESTORE_PATH is None:
+#### check ###################################################################
+if RESTORE_PATH is None :
     raise UserWarning('Please change the variable `RESTORE_PATH` to where you would like to load the model from')
-    
+if video_path is None :
+    raise UserWarning('Please change the variable `video_path` to where you would like to save the video')
+
 # call class env ##############################################################
 game_wrapper = GameWrapper(ENV_NAME, MAX_NOOP_STEPS,history_length=4, render_mode='human')
-
-video_path = "C:/Users/Enrico/Desktop/Progetti/9 REIN_FLEARNING/Deep-Q-Learning_Atari_game/videos/breakout_video.mp4"
 
 print("The environment has the following {} actions: {}".format(game_wrapper.env.action_space.n, game_wrapper.env.unwrapped.get_action_meanings()))
 
