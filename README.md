@@ -26,3 +26,4 @@
 
 ## Learning Curve
 * Single learning curve:
+* ![learning_curve_atari_dqn_breakout](https://github.com/EnricoBos/dqn_Atari_breakout/assets/44166692/47ed29aa-b58e-45f8-b7ad-f83f553d015c)
