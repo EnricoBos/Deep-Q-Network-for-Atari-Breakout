@@ -24,7 +24,7 @@ https://github.com/EnricoBos/dqn_Atari_breakout/assets/44166692/1f8dd0d7-81d4-49
 )*
 
 
-## Usage (be sure to define a file save path)
+## Usage: Ensure you define a file save path.
 * Traing the DQN Agent: `my_breakout_dqn.py`
 * Testing the DQN Agent: `my_breakout_dqn_eval.py`
 
