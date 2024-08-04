@@ -14,7 +14,7 @@ https://github.com/EnricoBos/dqn_Atari_breakout/assets/44166692/1f8dd0d7-81d4-49
 	- Install the OpenAI Gymnasium (V.0.28.1) Atari environment:
 	 'pip install gymnasium'
 	- Atari environment used: `BreakoutNoFrameskip-v4`
-* Tensorflow V.2.10.0](https://www.tensorflow.org/) 
+* Tensorflow V.2.10.0
 
 ## Implementation
 * Deep Q Learning Network with the following improvements:
