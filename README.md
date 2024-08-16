@@ -10,6 +10,7 @@ Ensure your environment is properly configured with the following dependencies:
 * Atari Environment: BreakoutNoFrameskip-v4
 * Tensorflow V.2.10.0
 
+
 ## Implementation
 * Deep Q Learning Network with the following improvements:
 	- Experience Replay: Storing past experiences to break the correlation between consecutive samples.
@@ -26,5 +27,10 @@ Ensure your environment is properly configured with the following dependencies:
 ## Learning Curve
 * ![learning_curve_atari_dqn_breakout](https://github.com/EnricoBos/dqn_Atari_breakout/assets/44166692/47ed29aa-b58e-45f8-b7ad-f83f553d015c)
 
+
 ## Result
 https://github.com/EnricoBos/dqn_Atari_breakout/assets/44166692/1f8dd0d7-81d4-495d-8969-384cb2a0a5ab
+
+
+## Authors
+* Enrico Boscolo
