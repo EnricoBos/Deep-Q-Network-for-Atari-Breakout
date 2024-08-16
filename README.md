@@ -3,11 +3,6 @@
 * This repository contains an implementation of a Deep Q-Learning Network (DQN) for playing Atari's Breakout using TensorFlow. The project is designed to demonstrate how reinforcement learning techniques can be applied to solve classic arcade games.
   
 
-https://github.com/EnricoBos/dqn_Atari_breakout/assets/44166692/1f8dd0d7-81d4-495d-8969-384cb2a0a5ab
-
-
-
-
 ## Environment Setup
 Ensure your environment is properly configured with the following dependencies:
 * Python 3.10.10 
@@ -30,3 +25,6 @@ Ensure your environment is properly configured with the following dependencies:
 
 ## Learning Curve
 * ![learning_curve_atari_dqn_breakout](https://github.com/EnricoBos/dqn_Atari_breakout/assets/44166692/47ed29aa-b58e-45f8-b7ad-f83f553d015c)
+
+## Result
+https://github.com/EnricoBos/dqn_Atari_breakout/assets/44166692/1f8dd0d7-81d4-495d-8969-384cb2a0a5ab
