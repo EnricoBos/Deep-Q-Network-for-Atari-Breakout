@@ -13,10 +13,19 @@ Ensure your environment is properly configured with the following dependencies:
 
 ## Implementation
 * Deep Q Learning Network with the following improvements:
-	- Experience Replay: Storing past experiences to break the correlation between consecutive samples.
-	- Fixed Target Q-Network: Stabilizing learning by using a separate target network for Q-value updates.
-	- TD error loss function with: Optimized using the formula
-		 *Q<sub>target</sub> = reward + (1-terminal) * (gamma * Q<sub>max</sub>(s’)
+	- **Experience Replay**: Storing past experiences in a replay buffer to break the correlation between consecutive samples. This allows the agent to learn from a broader distribution of experiences, improving convergence and stability.
+	- **Fixed Target Q-Network**: Stabilizing the learning process by introducing a separate target network. This target network is updated less frequently than the main network, preventing oscillations and divergence during training.
+	- **TD Error Loss Function**: Using Temporal Difference (TD) learning to minimize the error between predicted Q-values and target Q-values. The loss is optimized using the formula:
+	
+	  *Q<sub>target</sub> = reward + (1 - terminal) * (gamma * Q<sub>max</sub>(s’))*
+	  
+	  where:
+	  - `reward`: Immediate reward received after taking an action.
+	  - `terminal`: A boolean value that indicates whether the episode has ended.
+	  - `gamma`: The discount factor that weighs future rewards.
+	  - `Q<sub>max</sub>(s')`: The maximum predicted Q-value for the next state *s'*. This helps the agent learn to prioritize actions that lead to higher future rewards.
+
+	  Additionally, the Bellman equation is used to update Q-values, ensuring that the agent progressively refines its policy.
 
 
 ## Project Structure
