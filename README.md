@@ -29,8 +29,8 @@ Ensure your environment is properly configured with the following dependencies:
 
 
 ## Project Structure
-* my_breakout_dqn.py: Script to train the DQN agent.
-* my_breakout_dqn_eval.py: Script to test and evaluate the trained DQN agent.
+* `my_breakout_dqn.py`: Script to train the DQN agent.
+* `my_breakout_dqn_eval.py`: Script to test and evaluate the trained DQN agent.
 
 
 ## Learning Curve
