@@ -23,7 +23,7 @@ Ensure your environment is properly configured with the following dependencies:
 	  - `reward`: Immediate reward received after taking an action.
 	  - `terminal`: A boolean value that indicates whether the episode has ended.
 	  - `gamma`: The discount factor that weighs future rewards.
-	  - *`Q<sub>max</sub>(s’)`*: The maximum predicted Q-value for the next state *s'*. This helps the agent learn to prioritize actions that lead to higher future rewards.
+	  - `Q_max(s')`: The maximum predicted Q-value for the next state *s'*. This helps the agent learn to prioritize actions that lead to higher future rewards.
 
 	  Additionally, the Bellman equation is used to update Q-values, ensuring that the agent progressively refines its policy.
 
